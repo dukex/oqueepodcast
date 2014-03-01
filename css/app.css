@@ -1,0 +1,42 @@
+body, h1, h2, h3, h4, h5 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+}
+
+header {
+  text-align: center;
+  background: #ff115c;
+  overflow: hidden;
+}
+
+header h2 {
+  color: #e2e2e2;
+  margin: 0;
+}
+
+header h1{
+  color: #FFF;
+  font-size: 130px;
+  line-height: 198px;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+footer {
+  background: #307471;
+  color: #FFF;
+  padding: 10px
+}
+
+#made-by {
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+}
+
+#made-by a {
+  color: #FFF;
+  text-decoration: underline;
+}

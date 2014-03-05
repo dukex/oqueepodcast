@@ -2,9 +2,12 @@
 layout: default
 title: Afinal, O que é podcast?
 ---
-  <ol id="about">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+  <ol id="content">
+    {% for post in site.posts  sort:title %}
+      <li>
+        {{post.content}}
+      </li>
     {% endfor %}
   </ol>
 

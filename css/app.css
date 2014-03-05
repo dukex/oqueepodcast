@@ -1,6 +1,20 @@
+html { font-size: 62.5%; }
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 body, h1, h2, h3, h4, h5 {
   font-family: 'Exo 2', sans-serif;
   font-weight: 200;
+}
+
+body {
+  font-size: 30px;
+  font-size: 3.0rem;
+  line-height: 1.5;
 }
 
 header {
@@ -17,17 +31,90 @@ header h2 {
 header h1{
   color: #FFF;
   font-size: 130px;
-  line-height: 198px;
+  font-size: 13.0rem;
+  line-height: 1.5;
   font-weight: 800;
   margin: 0;
   margin-bottom: 30px;
 }
 
 
-footer {
+body > footer {
   background: #307471;
   color: #FFF;
   padding: 10px
+}
+
+
+#content {
+  list-style: none;
+  margin: 30px 5%;
+}
+
+.episode{
+  width: 30%;
+  background-color: #C7E6E4;
+  color: #FFF;
+  float: left;
+  margin: 0 2.0rem;
+}
+
+.episode > p {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  background-color: #9CC7C5;
+ margin-bottom: 50px;
+  display: block;
+    position: relative;
+}
+
+.episode > p::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 20%;
+ /* margin: 0 auto -50px auto;
+*/
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 30px 100px 0 100px;
+border-color: #9CC7C5 transparent transparent transparent;
+line-height: 0px;
+_border-color: #9CC7C5 #000000 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 100px 0 0;
+  border: 0;
+  font-size: 30px;
+  font-size: 3.0rem;
+  line-height: 1.5;
+  overflow: hidden
+}
+
+blockquote:before {
+  content: '“';
+  font-size: 140px;
+  font-style: italic;
+  font-family: Georgia, serif;
+  position: relative;
+  float: left;
+  top: 0;
+  margin: 0 30px 0 0;
+  line-height: 150px;
+}
+
+blockquote footer {
+  font-size: 20px;
+  font-size: 2.0rem;
+  float: right;
 }
 
 #made-by {

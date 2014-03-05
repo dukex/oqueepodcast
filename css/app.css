@@ -6,6 +6,15 @@ html { font-size: 62.5%; }
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+a {
+  color: #9CC7C5;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #307471
+}
+
 body, h1, h2, h3, h4, h5 {
   font-family: 'Exo 2', sans-serif;
   font-weight: 200;
@@ -38,6 +47,11 @@ header h1{
   margin-bottom: 30px;
 }
 
+h3 {
+  font-size: 55px;
+  border-bottom: 1px solid #C7E6E4;
+  line-height: 60px;
+}
 
 body > footer {
   background: #307471;
@@ -49,22 +63,29 @@ body > footer {
 #content {
   list-style: none;
   margin: 30px 5%;
+  overflow: hidden;
+}
+
+#content li {
+  overflow: hidden;
+  margin-bottom: 100px
 }
 
 .episode{
   width: 30%;
-  background-color: #C7E6E4;
+  background-color: #FFAAC2 ;
   color: #FFF;
   float: left;
   margin: 0 2.0rem;
+  margin-top: 50px;
+  padding-bottom: 20px;
 }
 
 .episode > p {
   padding: 10px;
   font-size: 20px;
-  font-weight: 800;
   text-align: center;
-  background-color: #9CC7C5;
+  background-color: #ff115c;
  margin-bottom: 50px;
   display: block;
     position: relative;
@@ -82,15 +103,38 @@ width: 0px;
 height: 0px;
 border-style: solid;
 border-width: 30px 100px 0 100px;
-border-color: #9CC7C5 transparent transparent transparent;
+border-color: #ff115c transparent transparent transparent;
 line-height: 0px;
-_border-color: #9CC7C5 #000000 #000000 #000000;
+_border-color: #ff115c #000000 #000000 #000000;
 _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 
 }
 
+
+.episode a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.episode .audiojs{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  margin: 0 auto;
+
+}
+.episode .audiojs p {
+  height: 25px;
+}
+.episode .play-pause{
+  width: 80px;
+  margin: 20px 0 0 20px;
+}
+.episode .scrubber, .episode .time {
+  display: none;
+}
 blockquote {
   margin: 0;
+  margin-top: 50px;
   padding: 0 100px 0 0;
   border: 0;
   font-size: 30px;
